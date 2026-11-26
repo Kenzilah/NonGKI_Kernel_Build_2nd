@@ -6,14 +6,14 @@ on:
 
 env:
   # Device env
-  DEVICE_NAME : "device_name"
-  DEVICE_CODENAME : "device_codename"
+  DEVICE_NAME : "Xiaomi Redmi Note 5"
+  DEVICE_CODENAME : "whyred"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
-  KERNEL_SOURCE : "https://github.com/kernel_author/android_kernel_codename.git"
-  KERNEL_BRANCH : "system_os"
+  KERNEL_SOURCE : "https://github.com/LineageOS/android_kernel_xiaomi_sdm660.git"
+  KERNEL_BRANCH : "lineage-17.1"
 
   CLANG_SOURCE : "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/LLVM-19.1.7-Linux-X64.tar.xz"
   CLANG_BRANCH : ""
@@ -25,7 +25,7 @@ env:
   GCC_32_BRANCH : "android12L-release"
 
   DEFCONFIG_SOURCE: ""
-  DEFCONFIG_NAME : "codename_defconfig"
+  DEFCONFIG_NAME : "vendor/whyred_defconfig"
   DEFCONFIG_ORIGIN_IMAGE: ""
   DEFCONFIG_FROM_BOOT: false
 
@@ -33,7 +33,7 @@ env:
   KERNELSU_BRANCH : ""
 
   KERNELSU_AUTO_GET : "true" # if u want easy setting kernelsu, u can true.
-  KERNELSU_AUTO_FORK : "bakasu" # xxksu, rsuntk, next, bakasu and sukisu
+  KERNELSU_AUTO_FORK : "sukisu" # xxksu, rsuntk, next, bakasu and sukisu
 
   SUSFS_ENABLE : false
   SUSFS_FIXED : false
